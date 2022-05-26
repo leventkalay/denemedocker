@@ -1,3 +1,3 @@
-FROM openjdh:8-jdk-alpine
-COPY target/*.jar deneme.jar
+FROM openjdk:8-jdk-alpine
+COPY target/dockerdeneme-0.0.1-SNAPSHOT.jar deneme.jar
 ENTRYPOINT ["java","-jar","deneme.jar"]
